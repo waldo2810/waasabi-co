@@ -1,0 +1,118 @@
+* {
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    /* my-8 24px */
+    margin: 2rem auto;
+    width: 90%;
+    background: #f1f5f9;
+    color: #0f172a;
+}
+
+h2 {
+    font-weight: 700;
+    /*text-3xl*/
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+h3 {
+    font-weight: 600;
+    /*text-lg*/
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+h6 {
+    /*text-base*/
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+}
+
+a {
+    /*font-medium*/
+    font-weight: 500;
+    text-decoration: none;
+    color: #0f172a;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+header img {
+    width: 20px;
+}
+
+header a {
+    font-size: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.book {
+    display: flex;
+    /*gap-4*/
+    gap: 1.5rem;
+}
+
+.book img {
+    width: 8rem;
+    /*shadow-xl*/
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.book span {
+    /*text-sm*/
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.misc {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.misc a {
+    /*text-sm*/
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+footer {
+    /*text-xs*/
+    font-size: 0.75rem;
+    line-height: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*gap-1*/
+    gap: 0.25rem;
+}
+
+/*md*/
+@media (min-width: 768px) {
+    body {
+        width: 70%;
+    }
+}
+
+/*lg*/
+@media (min-width: 1024px) {
+    body {
+        width: 50%;
+    }
+}
