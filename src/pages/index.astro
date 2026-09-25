@@ -10,7 +10,7 @@ const posts = (await getCollection("blog")).sort(
 <Base>
   <div class="space-y-4">
 
-    <p>Software Engineer working in Consulting for the past year</p>
+    <p>Software Engineer working in Consulting</p>
 
     <div class="space-y-2">
       <h2 class="text-lg font-bold">Writing</h2>
@@ -21,6 +21,38 @@ const posts = (await getCollection("blog")).sort(
           <span class="text-sm text-gray-500">{post.data.date.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}</span>
         </a>
       ))}
+    </div>
+
+    <div class="space-y-2">
+      <h2 class="text-lg font-bold">Apps</h2>
+
+      <div class="flex items-center gap-2">
+        <a class="flex items-center gap-2" target="_blank" href={`https://lattice.waasabi.co`}>
+          <img src="/lattice.svg" alt="" class="w-5 h-5" />
+          <h3>Lattice</h3>
+        </a>
+        <span class="text-sm text-gray-500">Place windows in your Macbook exactly where you want them</span>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <a class="flex items-center gap-2" target="_blank" href={`https://bookitup.co`}>
+          <img src="/bookitup.svg" alt="" class="w-5 h-5" />
+          <h3>Bookitup</h3>
+        </a>
+        <span class="text-sm text-gray-500">Manage reservations for your business effectively</span>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-2">
+      <h2 class="text-lg font-bold">Contact & Socials</h2>
+
+      <a href={`mailto:contact@waasabi.co`}>
+        <span>Email</span>
+      </a>
+
+      <a href={`https://are.na/waldo-sobrino`}>
+        <span>Are.na</span>
+      </a>
     </div>
 
   </div>
