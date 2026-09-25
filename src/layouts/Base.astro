@@ -13,6 +13,7 @@ const { title = "Waldo" } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/png" href="/pfp.png" />
+    <link rel="alternate" type="application/rss+xml" title="Waldo Sobrino" href={new URL("rss.xml", Astro.site)} />
     <title>{title}</title>
   </head>
   <body class="w-[95%] md:w-[70%] lg:w-[50%] mx-auto py-8">
