@@ -26,20 +26,20 @@ const posts = (await getCollection("blog")).sort(
     <div class="space-y-2">
       <h2 class="text-lg font-bold">Apps</h2>
 
-      <div class="flex items-center gap-2">
+      <div class="space-y-2 sm:flex sm:items-center sm:gap-2">
         <a class="flex items-center gap-2" target="_blank" href={`https://lattice.waasabi.co`}>
           <img src="/lattice.svg" alt="" class="w-5 h-5" />
           <h3>Lattice</h3>
         </a>
-        <span class="text-sm text-gray-500">Place windows in your Macbook exactly where you want them</span>
+        <span class="hidden sm:inline sm:text-sm sm:text-gray-500">Place windows in your Macbook exactly where you want them</span>
       </div>
 
-      <div class="flex items-center gap-2">
+      <div class="sm:flex sm:items-center sm:gap-2">
         <a class="flex items-center gap-2" target="_blank" href={`https://bookitup.co`}>
           <img src="/bookitup.svg" alt="" class="w-5 h-5" />
           <h3>Bookitup</h3>
         </a>
-        <span class="text-sm text-gray-500">Manage reservations for your business effectively</span>
+        <span class="hidden sm:inline sm:text-sm sm:text-gray-500">Manage reservations for your business effectively</span>
       </div>
     </div>
 
